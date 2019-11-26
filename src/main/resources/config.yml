@@ -1,0 +1,56 @@
+# The min bet amount
+minAmount: 1000
+
+GUI:
+  Size: 9
+  Title: "&lCOIN FLIP"
+  SkullItem:
+    name: "&f&l%name%"
+    lore:
+      - ""
+      - "&b&lInsats"
+      - " &7$%money%"
+      - ""
+      - "&b&lVald sida"
+      - " &7%side%"
+      - ""
+      - "&7Klicka här för att &a&lDELTA &7i satsningen!"
+  BookInfo:
+    type: BOOK
+    name: "&b&lCoin Flip Hjälp"
+    lore:
+      - ""
+      - "&f/coinflip"
+      - "&7Se alla aktiva satsningar"
+      - ""
+      - "&f/coinflip [mängd] [heads/tails]"
+      - "&7Starta en satsning"
+      - ""
+      - "&f/coinflip cancel"
+      - "&7Ta bort din satsning"
+      - ""
+      - "&f/coinflip toggle"
+      - "&7Sätt på/Stäng av coinflip meddelanden"
+  RefreshItem:
+    type: CHEST
+    name: "&b&lUppdatera"
+    lore:
+      - "&7Klicka här för att uppdatera sidan"
+
+AnimationGUI:
+  Title: "&lVINNAREN ÄR.."
+
+# messages
+Messages:
+  WinBroadcast: "&7&l** &a%winner% &7har besegrat &c%loser% &7i en &7&n$%amount%&r &7/coinflip &7&l**"
+  Entered: "&8[&e&l!&8] &eDu har skapat en &5$%amount% (&e/coinflip&5)"
+  Canceled: "&8[&e&l!&8] &eDu har tagit borts från coinflip satsningar!"
+  CanceledHelp: "&8[&e&l!&8] &eFör att ta bort din satsning skriv &6/cf cancel"
+  ReceivedMoney: " &a&l+ %amount%"
+  LostMoney: " &c&l- %amount%"
+  NotEnoughMoney: "&&8[&e&l!&8] &cDu har inte tillräckligt med pengar!"
+  NotEnoughEnterMoney: "&8[&e&l!&8] &cMinsta satsning är &41,000kr!"
+  AlreadyInBet: "&8[&e&l!&8] &cDu har redan en satsning!"
+  NotInBet: "&8[&e&l!&8] &eDu har ingen satsning!"
+  ToggleON: "&8[&e&l!&8] &eCoinFlip meddelanden är &a&lPÅ"
+  ToggleOFF: "&8[&e&l!&8] &eCoinFlip meddelanden är &c&lAV"

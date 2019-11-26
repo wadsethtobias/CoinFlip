@@ -1,0 +1,9 @@
+name: CoinFlip
+version: ${project.version}
+main: me.toqless.coinflip.CoinFlip
+api-version: 1.13
+
+commands:
+  coinflip:
+    description: High Stakes Gambling
+    aliases: [cf]
