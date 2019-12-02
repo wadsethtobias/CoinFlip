@@ -51,7 +51,6 @@ public class CoinFlipCommand implements CommandExecutor {
                         API.addBalance(p, (long) amount);
                         this.coins.removeEntry(p);
                         this.menu.updateInv();
-                        p.sendMessage(Chat.color(CoinFlip.getInstance().getConfig().getString("Messages.ReceivedMoney").replaceAll("%amount%", df.format(amount))));
                         p.sendMessage(Chat.color(CoinFlip.getInstance().getConfig().getString("Messages.Canceled")));
                         return false;
                     }
@@ -67,7 +66,6 @@ public class CoinFlipCommand implements CommandExecutor {
                             if (API.getBalance(p) >= amount) {
                                 if (amount >= CoinFlip.getInstance().getConfig().getInt("minAmount")) {
                                     API.takeBalance(p, (long) amount);
-                                    p.sendMessage(Chat.color(CoinFlip.getInstance().getConfig().getString("Messages.LostMoney").replaceAll("%amount%", df.format(amount))));
                                     p.sendMessage(Chat.color(CoinFlip.getInstance().getConfig().getString("Messages.Entered").replaceAll("%amount%", df.format(amount))));
                                     if (!CoinFlip.getInstance().getStats().inEntry(p)) {
                                         CoinFlip.getInstance().getStats().createEntry(p);

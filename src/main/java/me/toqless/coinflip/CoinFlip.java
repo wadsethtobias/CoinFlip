@@ -9,7 +9,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.plugin.Plugin;
-import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class CoinFlip extends JavaPlugin {
@@ -40,7 +39,7 @@ public final class CoinFlip extends JavaPlugin {
     }
 
     public static CoinFlip getInstance() {
-        return (CoinFlip)JavaPlugin.getPlugin((Class)CoinFlip.class);
+        return (CoinFlip)JavaPlugin.getPlugin((Class<CoinFlip>)CoinFlip.class);
     }
 
     public BroadcastManager getBroadcast() {

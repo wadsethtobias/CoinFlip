@@ -48,7 +48,7 @@ public class ClickEvent implements Listener {
             if (item.getType().equals((Object) Material.PLAYER_HEAD)) {
                 if (coins.inEntry(other)) {
                     double amount = coins.getEntry().get(other).getAmount();
-                    if (API.getBalance(p) > amount) {
+                    if (API.getBalance(p) >= amount) {
                         API.takeBalance(p, (long) amount);
                         p.closeInventory();
                         coins.removeEntry(other);

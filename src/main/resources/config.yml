@@ -1,5 +1,5 @@
 # The min bet amount
-minAmount: 1000
+minAmount: 750
 
 GUI:
   Size: 9
@@ -9,7 +9,7 @@ GUI:
     lore:
       - ""
       - "&b&lInsats"
-      - " &7$%money%"
+      - " &7%money%kr"
       - ""
       - "&b&lVald sida"
       - " &7%side%"
@@ -42,14 +42,12 @@ AnimationGUI:
 
 # messages
 Messages:
-  WinBroadcast: "&7&l** &a%winner% &7har besegrat &c%loser% &7i en &7&n$%amount%&r &7/coinflip &7&l**"
-  Entered: "&8[&e&l!&8] &eDu har skapat en &5$%amount% (&e/coinflip&5)"
+  WinBroadcast: "&7&l** &a%winner% &7har besegrat &c%loser% &7i en &7&n%amount%kr&r &7/coinflip &7&l**"
+  Entered: "&8[&e&l!&8] &eDu har skapat en &6%amount%kr (&e/coinflip&6)"
   Canceled: "&8[&e&l!&8] &eDu har tagit borts från coinflip satsningar!"
   CanceledHelp: "&8[&e&l!&8] &eFör att ta bort din satsning skriv &6/cf cancel"
-  ReceivedMoney: " &a&l+ %amount%"
-  LostMoney: " &c&l- %amount%"
   NotEnoughMoney: "&&8[&e&l!&8] &cDu har inte tillräckligt med pengar!"
-  NotEnoughEnterMoney: "&8[&e&l!&8] &cMinsta satsning är &41,000kr!"
+  NotEnoughEnterMoney: "&8[&e&l!&8] &cMinsta satsning är &4750kr!"
   AlreadyInBet: "&8[&e&l!&8] &cDu har redan en satsning!"
   NotInBet: "&8[&e&l!&8] &eDu har ingen satsning!"
   ToggleON: "&8[&e&l!&8] &eCoinFlip meddelanden är &a&lPÅ"
